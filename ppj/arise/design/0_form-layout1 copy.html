@@ -363,17 +363,6 @@
 
 					<div class="toggle-sidebar" id="toggle-sidebar"><i class="bi bi-list"></i></div>
 
-					<!-- Breadcrumb start -->
-					<ol class="breadcrumb d-md-flex d-none">
-						<li class="breadcrumb-item">
-							<i class="bi bi-house"></i>
-							<a href="index.html">Home</a>
-						</li>
-						<li class="breadcrumb-item">Forms</li>
-						<li class="breadcrumb-item breadcrumb-active" aria-current="page">Form Layout</li>
-					</ol>
-					<!-- Breadcrumb end -->
-
 					<!-- Header actions ccontainer start -->
 					<div class="header-actions-container">
 
@@ -463,70 +452,86 @@
 							<div class="col-sm-12 col-12">
 
 								<!-- Card start -->
-								<div class="card">
-									<div class="card-header">
-										<div class="card-title">Form Layout</div>
-									</div>
+								
 									<div class="card-body">
 
 										<!-- Row start -->
+										 
+										<ol class="breadcrumb d-md-flex d-none">
+											<li class="breadcrumb-item">
+												<i class="bi bi-house"></i>
+												<a href="index.html">page1</a>
+											</li>
+											<li class="breadcrumb-item">page2</li>
+											<li class="breadcrumb-item breadcrumb-active" aria-current="page">Default</li>
+										</ol>
+										<div class="card">
+											<div class="card-header">
+												<div class="card-title"><h2 style="height: 80px;">code</h2></div>
+											</div>
+										<div class="card">
+											<div class="card-header">
+												<div class="card-title"><h3 style="height: 80px;">기본정보</h3></div>
+											</div>
 										<div class="row">
-											<div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-4 col-12">
-												<label for="inputIndustryType" class="form-label">Industry Type</label>
+											<div class="col-3">
+												<label for="inputIndustryType" class="form-label">코드그룹</label>
 													<select class="form-select" id="inputIndustryType">
-														<option value="Select">Industry Type</option>
+														<option value="Select">선택하세요</option>
 													</select>
 												</div>
 											</div>
 											<div class="row">
-											<div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-4 col-12">
+											<div class="col-3">
 												<div class="mb-3">
-													<label for="inputEmail" class="form-label">Email</label>
-													<input type="email" class="form-control" id="inputEmail" placeholder="Enter Email">
+													<label for="inputEmail" class="form-label">코드</label>
+													<input type="text" class="form-control" id="inputCompanyName"
+														placeholder="자동생성">
 												</div>
 											</div>
 											
-											<div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-4 col-12">
+											<div class="col-3">
 												<div class="mb-3">
-													<label for="inputNumber" class="form-label">Phone</label>
-													<input type="number" class="form-control" id="inputNumber" placeholder="Enter Phone Number">
-												</div>
-											</div>
-											<div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-4 col-12">
-												<div class="mb-3">
-													<label for="inputCompanyName" class="form-label">Company Name</label>
+													<label for="inputNumber" class="form-label">코드(ANOTHER)</label>
 													<input type="text" class="form-control" id="inputCompanyName"
-														placeholder="Enter Company Name">
+														placeholder="영대소문자,숫자">
 												</div>
 											</div>
-											<div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-4 col-12">
+											<div class="col-3">
 												<div class="mb-3">
-													<label for="inputBusinessAddress" class="form-label">Business Address</label>
+													<label for="inputCompanyName" class="form-label">코드 이름</label>
+													<input type="text" class="form-control" id="inputCompanyName"
+														placeholder="한글,영대소문자,숫자">
+												</div>
+											</div>
+											<div class="col-3">
+												<div class="mb-3">
+													<label for="inputBusinessAddress" class="form-label">코드 이름(영문)</label>
 													<input type="text" class="form-control" id="inputBusinessAddress"
-														placeholder="Enter Business Address">
+														placeholder="영대소문자,숫자">
 												</div>
 											</div>
 											<div class="row">
-											<div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-4 col-12">
+											<div class="col-3">
 												<div class="mb-3">
-													<label for="inputIndustryType" class="form-label">Industry Type</label>
+													<label for="inputIndustryType" class="form-label">사용여부</label>
 													<select class="form-select" id="inputIndustryType">
-														<option value="Select">Industry Type</option>
+														<option value="Select">사용</option>
+														<option value="Select">미사용</option>
 													</select>
 												</div>
 											</div>
-											<div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-4 col-12">
+											<div class="col-3">
 												<div class="mb-3">
-													<label for="inputPostalCode" class="form-label">Postal Code</label>
-													<input type="text" class="form-control" id="inputPostalCode" placeholder="Enter Postal Code">
+													<label for="inputPostalCode" class="form-label">순서</label>
+													<input type="text" class="form-control" id="inputPostalCode" placeholder=>
 												</div>
 											</div>
 											<div class="row">
-											<div class="col-sm-6 col-12">
+											<div class="col-sm-6 col-3">
 												<div class="mb-3">
-													<label for="inputMessage" class="form-label">Message</label>
-													<textarea class="form-control" id="inputMessage" placeholder="Enter Message"
-														rows="3"></textarea>
+													<label for="inputMessage" class="form-label">설명</label>
+													<textarea class="form-control" id="inputMessage" placeholder=></textarea>
 											
 												</div>
 											</div>
@@ -534,113 +539,125 @@
 										
 											<div class="col-3">
 												<div class="mb-3">
-													<label for="inputEmail" class="form-label">Email</label>
-													<input type="email" class="form-control" id="inputEmail" placeholder="Enter Email">
+													<label for="inputEmail" class="form-label">다국어1</label>
+													<input type="text" class="form-control" id="inputCompanyName" placeholder=>
 												</div>
 											</div>
 											
 											<div class="col-3">
 												<div class="mb-3">
-													<label for="inputNumber" class="form-label">Phone</label>
-													<input type="number" class="form-control" id="inputNumber" placeholder="Enter Phone Number">
-												</div>
-											</div>
-											<div class="col-3">
-												<div class="mb-3">
-													<label for="inputCompanyName" class="form-label">Company Name</label>
+													<label for="inputNumber" class="form-label">다국어2</label>
 													<input type="text" class="form-control" id="inputCompanyName"
-														placeholder="Enter Company Name">
+														placeholder=>
 												</div>
 											</div>
 											<div class="col-3">
 												<div class="mb-3">
-													<label for="inputBusinessAddress" class="form-label">Business Address</label>
+													<label for="inputCompanyName" class="form-label">다국어3</label>
+													<input type="text" class="form-control" id="inputCompanyName"
+														placeholder=>
+												</div>
+											</div>
+											<div class="col-3">
+												<div class="mb-3">
+													<label for="inputBusinessAddress" class="form-label">다국어4</label>
 													<input type="text" class="form-control" id="inputBusinessAddress"
-														placeholder="Enter Business Address">
+														placeholder=>
 												</div>
 											</div>
 											<div class="row">
 												<div class="col-3">
 													<div class="mb-3">
-														<label for="inputEmail" class="form-label">Email</label>
-														<input type="email" class="form-control" id="inputEmail" placeholder="Enter Email">
+														<label for="inputEmail" class="form-label">다국어5</label>
+														<input type="text" class="form-control" id="inputCompanyName" placeholder=>
 													</div>
 												</div>
 												
 												<div class="col-3">
 													<div class="mb-3">
-														<label for="inputNumber" class="form-label">Phone</label>
-														<input type="number" class="form-control" id="inputNumber" placeholder="Enter Phone Number">
-													</div>
-												</div>
-												<div class="col-3">
-													<div class="mb-3">
-														<label for="inputCompanyName" class="form-label">Company Name</label>
+														<label for="inputNumber" class="form-label">다국어6</label>
 														<input type="text" class="form-control" id="inputCompanyName"
-															placeholder="Enter Company Name">
+														placeholder=>
 													</div>
 												</div>
 												<div class="col-3">
 													<div class="mb-3">
-														<label for="inputBusinessAddress" class="form-label">Business Address</label>
+														<label for="inputCompanyName" class="form-label">다국어7</label>
+														<input type="text" class="form-control" id="inputCompanyName"
+															placeholder=>
+													</div>
+												</div>
+												<div class="col-3">
+													<div class="mb-3">
+														<label for="inputBusinessAddress" class="form-label">다국어8</label>
 														<input type="text" class="form-control" id="inputBusinessAddress"
-															placeholder="Enter Business Address">
+															placeholder=>
 													</div>
 												</div>
 												
 													<div class="col-3">
 														<div class="mb-3">
-															<label for="inputEmail" class="form-label">Email</label>
-															<input type="email" class="form-control" id="inputEmail" placeholder="Enter Email">
+															<label for="inputEmail" class="form-label">예비1 (VARCHAR TYPE)</label>
+															<input type="text" class="form-control" id="inputCompanyName" placeholder=>
 														</div>
 													</div>
 													
 													<div class="col-3">
 														<div class="mb-3">
-															<label for="inputNumber" class="form-label">Phone</label>
-															<input type="number" class="form-control" id="inputNumber" placeholder="Enter Phone Number">
-														</div>
-													</div>
-													<div class="col-3">
-														<div class="mb-3">
-															<label for="inputCompanyName" class="form-label">Company Name</label>
+															<label for="inputNumber" class="form-label">예비2 (VARCHAR TYPE)</label>
 															<input type="text" class="form-control" id="inputCompanyName"
-																placeholder="Enter Company Name">
+														placeholder=>
 														</div>
 													</div>
 													<div class="col-3">
 														<div class="mb-3">
-															<label for="inputBusinessAddress" class="form-label">Business Address</label>
+															<label for="inputCompanyName" class="form-label">예비3 (VARCHAR TYPE)</label>
+															<input type="text" class="form-control" id="inputCompanyName"
+																placeholder=>
+														</div>
+													</div>
+													<div class="col-3">
+														<div class="mb-3">
+															<label for="inputBusinessAddress" class="form-label">예비4 (VARCHAR TYPE)</label>
 															<input type="text" class="form-control" id="inputBusinessAddress"
-																placeholder="Enter Business Address">
+																placeholder=>
 														</div>
 													</div>
 													
 														<div class="col-3">
 															<div class="mb-3">
-																<label for="inputEmail" class="form-label">Email</label>
+																<label for="inputEmail" class="form-label">예비1(INT TYPE)</label>
 																<input type="email" class="form-control" id="inputEmail" placeholder="Enter Email">
+																<button class="btn" type="button" style="float: left">
+																	<i class="bi bi-file-text"></i>
+																</button>
 															</div>
 														</div>
 														
 														<div class="col-xxl- col-xl-3 col-lg-4 col-md-4 col-sm-4 col-12">
 															<div class="mb-3">
-																<label for="inputNumber" class="form-label">Phone</label>
-																<input type="number" class="form-control" id="inputNumber" placeholder="Enter Phone Number">
-															</div>
-														</div>
-														<div class="col-3">
-															<div class="mb-3">
-																<label for="inputCompanyName" class="form-label">Company Name</label>
+																<label for="inputNumber" class="form-label">예비2(INT TYPE)</label>
 																<input type="text" class="form-control" id="inputCompanyName"
-																	placeholder="Enter Company Name">
+														placeholder=>
 															</div>
 														</div>
 														<div class="col-3">
 															<div class="mb-3">
-																<label for="inputBusinessAddress" class="form-label">Business Address</label>
+																<label for="inputCompanyName" class="form-label">예비3(INT TYPE)</label>
+																<input type="text" class="form-control" id="inputCompanyName"
+																	placeholder=>
+															</div>
+														</div>
+														<div class="col-3">
+															<div class="mb-3">
+																<label for="inputBusinessAddress" class="form-label">예비4(INT TYPE)</label>
 																<input type="text" class="form-control" id="inputBusinessAddress"
-																	placeholder="Enter Business Address">
+																	placeholder=>
+															<button class="btn" type="button" style="float: right;">
+																<i class="bi bi-clipboard-plus"></i>
+															</button>
+																	</div>
+																</div>
 															</div>
 														</div>
 													</div>
